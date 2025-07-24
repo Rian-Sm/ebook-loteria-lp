@@ -10,15 +10,50 @@
   background: linear-gradient(90deg, #4C2C7E, #8A50E4);
 }
 
+
 .svg-star-with-blur {
-  mask-repeat: no-repeat;
-  mask-size: contain;
   filter: blur(5px);
 
 }
-
 .svg-star-with-blur path {
   fill: #fff;
+}
 
+.background-icon-card {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-a path {
+  fill: #846700;
+}
+
+.icon-b path {
+  fill: #229551;
+}
+.icon-c path {
+  fill: #911787;
+}
+.card-back-a path {
+  fill: #F3DF9D;
+}
+.card-back-b path {
+  fill: #9FE5BC;
+}
+.card-back-c path {
+  fill: #E4BFF6;
+}
+.background-icon-card-1 path {
+  fill: #F3DF9D;
+}
+.background-icon-card-2 path {
+  fill: #9FE5BC;
+} 
+.background-icon-card-3 path {
+  fill: #E4BFF6;
+}
+
+.icon-loto path {
+  fill: #911787;
 }
 
