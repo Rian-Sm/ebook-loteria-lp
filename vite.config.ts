@@ -1,11 +1,18 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss()
+    tailwindcss(),
+    svgr({
+      svgrOptions: {
+        exportType: 'named', // or 'named' if you prefer named exports
+      },
+      include: '**/*.svg',
+    }),
   ],
 })
