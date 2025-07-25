@@ -1,5 +1,3 @@
-import type { ReactComponentElement, ReactNode, React} from "react"
-
 import {ReactComponent as IconA} from '../assets/card-icon-a.svg'
 import {ReactComponent as IconB} from '../assets/card-icon-b.svg'
 import {ReactComponent as IconC} from '../assets/card-icon-c.svg'
@@ -62,7 +60,7 @@ function ComplexCard (
             },
             'stairs': {
                 get: (className: string) => <BackC className={`${className} w-30`} />,
-                align: `-mt-10.5 -mr-9`
+                align: `-mt-15 -mr-7.5`
             }
         }
 
@@ -94,7 +92,7 @@ function ComplexCard (
         }
     
     return (
-     <div className={`card overflow-hidden rounded-3xl ${styleCard[color].background} min-w-70 h-70 gap-4 flex flex-col p-4 max-lg:h-full max-lg:pb-12`}>
+     <div className={`card overflow-hidden rounded-3xl ${styleCard[color].background} min-w-70 w-auto h-70 gap-4 flex flex-col p-4 max-lg:h-full max-lg:pb-12`}>
                 <div className="card-top flex h-30">
                   <div className="card-icon relative  w-23 h-23 mt-auto ">
                     <div className="background-icon-card absolute -mt-5 ">
@@ -110,7 +108,7 @@ function ComplexCard (
                     {IconsBack[IconBackground].get(`${styleCard[color].iconBackground} ${classNameIconBack}`)}
                   </div>
                 </div>
-                <div className="card-bottom flex flex-col gap-1">
+                <div className="card-bottom flex flex-col gap-1 max-lg:h-35">
                   <h3 className="font-bold text-lg text-white">{text}</h3>
                   <p className='text-white text-md tracking-tighter'>{description}</p>
                 </div>

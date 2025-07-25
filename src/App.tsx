@@ -43,14 +43,14 @@ function App() {
       </div>
 
       <div className='flex flex-col bg-[#EDEAFE] w-full'>
-        <div className='lg:w-300 max-lg:w-full max-lg:px-8 mx-auto flex flex-col '>
+        <div className='lg:w-300 max-lg:w-full max-lg:px-5  mx-auto flex flex-col '>
 
           <div className="w-full align-middle justify-center flex pt-10 mb-10">
             <h2 className='font-[roca-one] font-bold text-3xl max-lg:text-2xl'>O que você vai aprender:</h2>
           </div>
 
           <div className='flex flex-col w-full'>
-            <div className="cardList max-lg:w-full  max-lg:flex-col flex justify-between gap-5 max-lg:gap-3">
+            <div className="cardList max-lg:w-full  overflow-x-auto  flex justify-between gap-5 max-lg:gap-3">
               <ComplexCard 
                 Icon='dice' 
                 IconBackground='target'
