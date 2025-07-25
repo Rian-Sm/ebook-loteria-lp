@@ -1,69 +1,61 @@
-# React + TypeScript + Vite
+# Landing Page
+ __Landing page__ com diversas caracteristicas des design.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[GITHUB PAGES](https://rian-sm.github.io/ebook-loteria-lp/) do projeto.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalação
 
-## Expanding the ESLint configuration
+### 1. Clone do projeto e instalação de dependências
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+````
+git clone https://github.com/Rian-Sm/ebook-loteria-lp.git
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+cd ebook-loteria-lp
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+````
+
+### 2. Rodar o projeto
+
+Para rodar o projeto basta executar
+
+````
+npm run dev
+````
+
+### 3.  Build e Deployment - local / github pages
+
+Para gerar um deployment é necessário modificar o arquivo `vite.config.ts` onde determinará a base dos arquivos sendo github pages ou outro local.
+
+após configuração de arquivo execute execute um dos dois processos abaixo:
+
+
+#### 3.1. Deployment local 
+
+
+```
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Para rodar local é necessario usar um pacote de servidor js:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+npm install -g serve
+```
+
+assim executando o codigo com
+
+```
+serve dist
+```
+
+#### 3.2. Deployment Github Pages
+
+Basta configurar a rota para o repositorio remoto e executar
+
+```
+npm run deploy
+```
+
