@@ -1,4 +1,4 @@
-# Landing Page
+# EBOOK LOTERIA LP
  __Landing page__ com diversas caracteristicas des design.
 
 [GITHUB PAGES](https://rian-sm.github.io/ebook-loteria-lp/) do projeto.
