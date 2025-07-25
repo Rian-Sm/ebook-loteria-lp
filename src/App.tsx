@@ -18,46 +18,46 @@ import image3 from './assets/man-with tablet.png'
 
 import './App.css'
 
-function App() {
+import Button from './components/Button'
+import Logotipo from './components/Logotipo copy'
 
+function App() {
   return (
     <>
-    <header className='w-full lg:px-150 md:px-40 py-5 bg-[#DDD6FB]' >
-            <div className="flex p-1 w-40 h-17 rounded-sm border-1 border-solid border-black items-center justify-center">
-              <a target='_blank'>  
-                <span className=''>
-                  <p className='text-3xl'>Logotipo</p>
-                </span>
-              </a>
-            </div>  
+    <header className='w-auto px-auto py-5 bg-[#DDD6FB]' >
+      <div className='lg:w-300 mx-auto'>
+            <Logotipo></Logotipo>
+      </div> 
     </header> 
     <main>
-      <div className='banner-background-gradient lg:px-150 md:px-40 flex pt-10 w-full'>
-        <div className='flex w-1/2 flex-col align-start justify-center gap-5 '>
-          <h1 className='font-bold text-6xl'>Existe fórmula para ganhar na loteria? </h1>
-          <p className='text-3xl'>Você ainda aposta no escuro? Descubra como jogar com estratégia! <strong>Cadastre-se e</strong> faça o download</p>
-          <button className='flex btn-background-gradient rounded-full items-center justify-center px-5 py-1 w-70 h-15 '>
-            <p className='text-white text-2xl '>Quero meu ebook</p>
-          </button>
-        </div>
-        <div className=' float-left relative w-1/2 '>
-          <div  className='absolute top-5 z-0 svg-star-with-blur w-full'>
-            <ShootingStar className='w-full' />
+      <div className='banner-background-gradient  w-full'>
+        <div className='lg:w-300 mx-auto  flex pt-10'>
+          <div className='flex w-1/2 flex-col align-start justify-center gap-5 '>
+            <h1 className='font-[roca-one] font-bold text-6xl'>Existe fórmula para ganhar na loteria? </h1>
+            <p className='font-[Raleway] text-3xl'>Você ainda aposta no escuro? Descubra como jogar com estratégia! <strong>Cadastre-se e</strong> faça o download</p>
+            <Button text='' />
           </div>
-           <div className='flex w-full ml-auto mr-auto justify-center'>
-             <img className='relative z-0' src={image1} alt="Woman Playing" />
-           </div>
-         </div>
+          <div className=' float-left relative w-1/2 '>
+            <div  className='absolute top-5 z-0 svg-star-with-blur w-full'>
+              <ShootingStar className='w-full' />
+            </div>
+            <div className='flex w-full ml-auto mr-auto justify-center'>
+              <img className='relative z-0' src={image1} alt="Woman Playing" />
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className='flex flex-col lg:px-150 md:px-40 bg-[#EDEAFE] pt-10 w-full'>
+      <div className='flex flex-col bg-[#EDEAFE] w-full'>
+        <div className='lg:w-300 mx-auto flex flex-col '>
+
           <div className="w-full align-middle justify-center flex pt-10 mb-10">
-            <h2 className='font-bold text-2xl'>O que você vai aprender:</h2>
+            <h2 className='font-[roca-one] font-bold text-3xl'>O que você vai aprender:</h2>
           </div>
 
           <div className='flex flex-col w-full'>
-            <div className="cardList flex justify-between gap-4">
-              <div className="card overflow-hidden rounded-3xl bg-[#E0B00B] w-85 h-70 gap-4 flex flex-col p-4">
+            <div className="cardList flex justify-between gap-5">
+              <div className="card overflow-hidden rounded-3xl bg-[#E0B00B] min-w-70 h-70 gap-4 flex flex-col p-4">
                 <div className="card-top flex h-30">
                   <div className="card-icon relative  w-23 h-23 mt-auto ">
                     <div className="background-icon-card absolute -mt-5 ">
@@ -78,7 +78,7 @@ function App() {
                   <p className='text-white text-md tracking-tighter'>Os desdobramentos são técnicas que aumentam suas chances de premiação, especialmente nas loterias.</p>
                 </div>
               </div>
-              <div className="card overflow-hidden rounded-3xl bg-[#10BD57] w-85 h-70 gap-4 flex flex-col p-4">
+              <div className="card overflow-hidden rounded-3xl bg-[#10BD57] min-w-70 h-70 gap-4 flex flex-col p-4">
                 <div className="card-top flex h-30">
                   <div className="card-icon relative  w-23 h-23 mt-auto">
                     <div className="background-icon-card absolute -mt-5">
@@ -99,7 +99,7 @@ function App() {
                   <p className='text-white text-md tracking-tighter'>O fechamento é uma técnica que realmente pode aumentar suas chances de conquistar o prêmio principal da loteria.</p>
                 </div>
               </div>
-              <div className="card overflow-hidden rounded-3xl bg-[#BB60E9] w-90 h-70 gap-4 flex flex-col p-4">
+              <div className="card overflow-hidden rounded-3xl bg-[#BB60E9] min-w-70 h-70 gap-4 flex flex-col p-4">
                 <div className="card-top flex h-30">
                   <div className="card-icon relative  w-23 h-23 mt-auto">
                     <div className="background-icon-card absolute -mt-5">
@@ -124,7 +124,7 @@ function App() {
           </div>
 
           <div className="w-full align-middle justify-center flex pt-10 mb-10">
-            <h2 className='font-bold text-2xl'>E ainda tem mais...</h2>
+            <h2 className='font-[roca-one] font-bold text-3xl'>E ainda tem mais...</h2>
           </div>
 
           <div className='flex  justify-between gap-4 w-full'>
@@ -158,17 +158,17 @@ function App() {
           </div> 
             <div className='flex flex-col justify-center items-center gap-5 mt-10 pb-10'>
               <p className='text-2xl text-[#5A5A5A]'>Matemática e sorte podem andar juntas. Você está pronto para jogar com inteligência?</p>
-              <button className='flex btn-background-gradient rounded-full items-center justify-center px-5 py-1 w-70 h-15 '>
-                <p className='text-white text-2xl '>Quero meu ebook</p>
-              </button>
+              <Button text='' />
+
             </div>
+        </div>
+
       </div>
 
       <div className=''>
-        <div className='bg-[#D5CCFC] w-full lg:px-150 md:px-40 p-10'>
-          <div className='flex  justify-between gap-4 w-full mb-10'>
-            
-
+        <div className='bg-[#D5CCFC] w-full py-10'>
+        <div className='lg:w-300 mx-auto flex flex-col '>
+          <div className='flex  justify-between gap-4 w-full mb-10'>            
             <div className='flex  flex-col w-2/3 pt-10 gap-10'>
                  <h1 className='font-bold text-6xl tracking-tighter '>Como faço o download? </h1>
 
@@ -208,21 +208,15 @@ function App() {
           </div> 
 
           <div className="flex flex-col justify-center items-center gap-5 ">
-               <p className='text-2xl text-center text-[#5A5A5A]'>Matemática e sorte podem andar juntas. Por que aqui no Sorte Sorte, sua sorte pode ser em dobro! Vocês está pronto para jogar com inteligência? </p>
-                <button className='flex btn-background-gradient rounded-full items-center justify-center px-5 py-1 w-70 h-15 '>
-                  <p className='text-white text-2xl '>Quero meu ebook</p>
-                </button>
+              <p className='text-2xl text-center text-[#5A5A5A]'>Matemática e sorte podem andar juntas. Por que aqui no Sorte Sorte, sua sorte pode ser em dobro! Vocês está pronto para jogar com inteligência? </p>
+              <Button text='' />
             </div>
 
+          </div>
         </div>
-        <div className='flex flex-col justify-center items-center gap-3 h-70 w-full p-15'>
-            <div className="flex my-5 p-1 w-40 h-17 rounded-sm border-1 border-solid border-black items-center justify-center">
-              <a target='_blank'>  
-                <span className=''>
-                  <p className='text-3xl'>Logotipo</p>
-                </span>
-              </a>
-            </div>
+        <div className=' lg:w-300 mx-auto flex flex-col justify-center items-center gap-3 h-70 w-full py-15'>
+          <Logotipo></Logotipo>
+
           <p className='text-[#383B41] text-lg'>Registramos o seu pedido em casas Lotéricas Oficiais e te avisamos sempre que você ganhar!</p>
           <p className='text-[#383B41] text-sm '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
           <p className='text-[#383B41] text-sm'>© Todos os direitos reservados</p>
