@@ -92,7 +92,7 @@ function ComplexCard (
         }
     
     return (
-     <div className={`card overflow-hidden rounded-3xl ${styleCard[color].background} min-w-70 w-auto h-70 gap-4 flex flex-col p-4 max-lg:h-full max-lg:pb-12`}>
+     <div className={`card overflow-hidden rounded-3xl ${styleCard[color].background} min-w-70 w-auto h-70 gap-4 flex flex-col p-4 max-lg:h-full max-lg:pb-12 basis-full`}>
                 <div className="card-top flex h-30">
                   <div className="card-icon relative  w-23 h-23 mt-auto ">
                     <div className="background-icon-card absolute -mt-5 ">
