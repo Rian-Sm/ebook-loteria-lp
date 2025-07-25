@@ -1,13 +1,4 @@
 import  { ReactComponent as ShootingStar}  from './assets/shooting_star.svg'
-import {ReactComponent as IconA} from './assets/card-icon-a.svg'
-import {ReactComponent as IconB} from './assets/card-icon-b.svg'
-import {ReactComponent as IconC} from './assets/card-icon-c.svg'
-import {ReactComponent as Star} from './assets/star.svg'
-import {ReactComponent as BackA} from './assets/card-back-a.svg'
-import {ReactComponent as BackB} from './assets/card-back-b.svg'
-import {ReactComponent as BackC} from './assets/card-back-c.svg'
-import {ReactComponent as BackIconCard} from './assets/background-icon-card.svg'
-
 import { ReactComponent as IconPage } from './assets/icon-page.svg' 
 import { ReactComponent as IconList } from './assets/icon-list.svg'
 import { ReactComponent as IconMail } from './assets/icon-mail.svg'
@@ -22,6 +13,7 @@ import Button from './components/Button'
 import Logotipo from './components/Logotipo'
 import BlockDescription from './components/BlockDescription'
 import Info from './components/Info'
+import ComplexCard from './components/ComplexCard'
 
 function App() {
   return (
@@ -51,77 +43,37 @@ function App() {
       </div>
 
       <div className='flex flex-col bg-[#EDEAFE] w-full'>
-        <div className='lg:w-300 max-lg:w-full max-lg:px-8 mx-auto flex flex-col '>
+        <div className='lg:w-300 max-lg:w-full max-lg:px-5  mx-auto flex flex-col '>
 
           <div className="w-full align-middle justify-center flex pt-10 mb-10">
             <h2 className='font-[roca-one] font-bold text-3xl max-lg:text-2xl'>O que você vai aprender:</h2>
           </div>
 
           <div className='flex flex-col w-full'>
-            <div className="cardList max-lg:w-full  max-lg:flex-col flex justify-between gap-5 max-lg:gap-3">
-              <div className="card overflow-hidden rounded-3xl bg-[#E0B00B] min-w-70 h-70 gap-4 flex flex-col p-4 max-lg:h-full max-lg:pb-12">
-                <div className="card-top flex h-30">
-                  <div className="card-icon relative  w-23 h-23 mt-auto ">
-                    <div className="background-icon-card absolute -mt-5 ">
-                      <BackIconCard className='background-icon-card-1 z-0 w-26'></BackIconCard>
-                    </div>
-                    <div className='relative background-icon-card z-1 p-3 px-3 ml-1.5 card-a'>
-                      <Star className='rotate-22 star icon-a mr-auto h-4 w-4'></Star>
-                      <IconA className='icon-a mx-auto h-10 w-10 -my-1'></IconA>
-                      <Star className='rotate-22 star icon-a ml-auto h-4 w-4'></Star>
-                    </div>
-                  </div>  
-                  <div className="card-background ml-auto -mt-20 -mr-12">
-                    <BackA className='card-back-a w-40'></BackA>
-                  </div>
-                </div>
-                <div className="card-bottom flex flex-col gap-1">
-                  <h3 className="font-bold text-lg text-white">O que são dedobramentos</h3>
-                  <p className='text-white text-md tracking-tighter'>Os desdobramentos são técnicas que aumentam suas chances de premiação, especialmente nas loterias.</p>
-                </div>
-              </div>
-              <div className="card overflow-hidden rounded-3xl bg-[#10BD57] min-w-70 h-70 gap-4 flex flex-col p-4 max-lg:h-full max-lg:pb-12">
-                <div className="card-top flex h-30">
-                  <div className="card-icon relative  w-23 h-23 mt-auto">
-                    <div className="background-icon-card absolute -mt-5">
-                      <BackIconCard className='background-icon-card-2 z-0 w-26'></BackIconCard>
-                    </div>
-                    <div className='relative background-icon-card z-1 p-3 px-3 ml-1.5 card-a'>
-                      <Star className='rotate-22 star icon-b mr-auto h-4 w-4'></Star>
-                      <IconB className='icon-b mx-auto h-8 w-8 '></IconB>
-                      <Star className='rotate-22 star icon-b ml-auto h-4 w-4'></Star>
-                    </div>
-                  </div>  
-                  <div className="card-background ml-auto -mt-10.5 -mr-9">
-                    <BackB className='card-back-b w-30'></BackB>
-                  </div>
-                </div>
-                <div className="card-bottom flex flex-col gap-1">
-                  <h3 className="font-bold text-lg text-white">O que são fechamentos</h3>
-                  <p className='text-white text-md tracking-tighter'>O fechamento é uma técnica que realmente pode aumentar suas chances de conquistar o prêmio principal da loteria.</p>
-                </div>
-              </div>
-              <div className="card overflow-hidden rounded-3xl bg-[#BB60E9] min-w-70 h-70 gap-4 flex flex-col p-4 max-lg:h-full max-lg:pb-12">
-                <div className="card-top flex h-30">
-                  <div className="card-icon relative  w-23 h-23 mt-auto">
-                    <div className="background-icon-card absolute -mt-5">
-                      <BackIconCard className='background-icon-card-3 z-0 w-26'></BackIconCard>
-                    </div>
-                    <div className='relative background-icon-card z-1 p-3 px-3 ml-1.5 card-a'>
-                      <Star className='rotate-22 star icon-c mr-auto h-4 w-4'></Star>
-                      <IconC className='icon-c mx-auto h-8 w-8 '></IconC>
-                      <Star className='rotate-22 star icon-c ml-auto h-4 w-4'></Star>
-                    </div>
-                  </div>  
-                  <div className="card-background ml-auto -mt-15 -mr-7.5">
-                    <BackC className='card-back-c w-35'></BackC>
-                  </div>
-                </div>
-                <div className="card-bottom flex flex-col gap-1">
-                  <h3 className="font-bold text-lg text-white">Calcular probabilidades </h3>
-                  <p className='text-white text-md tracking-tighter'>Entender as probabilidades de ganhar é essencial para montar estratégias de jogo mais inteligentes aumentando suas chances.</p>
-                </div>
-              </div>
+            <div className="cardList max-lg:w-full  overflow-x-auto  flex justify-between gap-5 max-lg:gap-3">
+              <ComplexCard 
+                Icon='dice' 
+                IconBackground='target'
+                color='yellow' 
+                text='O que são dedobramentos'
+                description='Os desdobramentos são técnicas que aumentam suas chances de premiação, especialmente nas loterias.'
+                />
+                
+                <ComplexCard
+                  Icon='window'
+                  IconBackground='points'
+                  color='green'
+                  text='O que são fechamentos'
+                  description='Os fechamentos são técnicas que aumentam suas chances de premiação, especialmente nas loterias.'
+                />
+
+                <ComplexCard
+                  Icon='math'
+                  IconBackground='stairs'
+                  color='purple'
+                  text='Calcular probabilidades'
+                  description='Entender as probabilidades de ganhar é essencial para montar estratégias de jogo mais inteligentes aumentando suas chances.'
+                />
             </div>
           </div>
 

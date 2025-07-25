@@ -3,7 +3,6 @@
 
 [GITHUB PAGES](https://rian-sm.github.io/ebook-loteria-lp/) do projeto.
 
-
 ## Instalação
 
 ### 1. Clone do projeto e instalação de dependências

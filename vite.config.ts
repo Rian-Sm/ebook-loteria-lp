@@ -13,7 +13,7 @@ export default defineConfig({
     tailwindcss(),
     svgr({
       svgrOptions: {
-        exportType: 'named', // or 'named' if you prefer named exports
+        exportType: 'named',
       },
       include: '**/*.svg',
     }),
