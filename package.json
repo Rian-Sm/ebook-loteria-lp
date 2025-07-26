@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "deployGit": "gh-pages -d dist -u 'GitHub Actions <actions@github.com>'"
+    "deployGit": "gh-pages -d dist -r https://<GH_TOKEN>@github.com/Rian-Sm/ebook-loteria-lp.git"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
