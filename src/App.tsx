@@ -136,7 +136,7 @@ function App() {
           </div> 
 
           <div className="flex flex-col justify-center items-center gap-5 px-5">
-              <p className='text-2xl text-center text-[#5A5A5A] max-lg:text-center max-lg:text-base'>Matemática e sorte podem andar juntas. Por que aqui no Sorte Sorte, sua sorte pode ser em dobro! Vocês está pronto para jogar com inteligência? </p>
+              <p className='text-2xl text-center text-[#5A5A5A] max-lg:text-center max-lg:text-base'>Matemática e sorte podem andar juntas. Por que aqui no Sorte Sorte, sua sorte pode ser em dobro! Vocês está pronto para jogar com inteligência?</p>
               <Button text='' />
             </div>
           </div>
