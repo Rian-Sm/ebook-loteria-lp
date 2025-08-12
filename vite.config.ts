@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import svgr from 'vite-plugin-svgr';
 
-const prod = '/ebook-loteria-lp/';
+const prod = '';
 
 // https://vite.dev/config/
 export default defineConfig({
